@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merry Christmas!</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+      body {
+        font-family: "Lobster", cursive;
+        text-align: center;
+        background: #be5d5d;
+        color: #fff;
+        position: relative;
+      }
+
+      section {
+        padding: 20px;
+        background: rgba(87, 33, 33, 0.7);
+        border-radius: 10px;
+        display: inline-block;
+      }
+
+      header p {
+        text-shadow: 1px 0px 0px #f00, 1px 1px 2px #f00;
+      }
+
+      .snows {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2rem;
+        animation: snow 5s linear infinite;
+      }
+
+      @keyframes snow {
+        0% {
+          transform: translateY(-100px);
+        }
+        100% {
+          transform: translateY(125px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <p>🎄 Merry Christmas! 🎄</p>
+    </header>
+    <section>
+      <p>
+        Wishing you a joyful holiday season filled with love, laughter, and
+        cheer!
+      </p>
+      <div class="snows">
+        <span>&#10052;</span>
+        <span>&#10052;</span>
+        <span>&#10052;</span>
+      </div>
+    </section>
+    <footer>
+      <p>With love, Bernardas</p>
+    </footer>
+  </body>
+</html>
