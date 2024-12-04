@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #16c087;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    gap: 1px;
+}
+
+.grid-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transition: transform 0.3s;
+}
+
+.grid-container div:hover {
+    transform: scale(1.2);
+}
+
+.solid {
+    background-color: red;
+}
+
+.empty {
+    background-color: blue;
+}
+
+.decor {
+    font-size: 24px;
+}
