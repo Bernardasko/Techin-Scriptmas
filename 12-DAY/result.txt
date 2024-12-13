@@ -1,0 +1,5 @@
+SELECT customer_gift_purchases.customer_id, SUM(customer_gift_purchases.retail_price) AS total_spent
+FROM customer_gift_purchases
+INNER JOIN gifts ON customer_gift_purchases.gift_id = gifts.gift_id
+INNER JOIN gift_categories ON gifts.gift_category_id = gift_categories.gift_category_id
+WHERE gift_categories.name = 'travel' AND customer_gift_purchases.customer_id = 8;
