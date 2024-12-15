@@ -1,0 +1,4 @@
+SELECT COUNT(DISTINCT ge.receiver_id) AS satisfied_participants
+FROM gift_exchanges ge
+JOIN user_wishlists uw ON ge.receiver_id = uw.user_id AND ge.gift_name = uw.gift_name
+JOIN events e ON ge.event_id = e.event_id;
