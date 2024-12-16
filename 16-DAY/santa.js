@@ -1,4 +1,3 @@
-// Morse code mapping for each letter
 const alphaMorse = {
   A: ".-", 
   B: "-...", 
